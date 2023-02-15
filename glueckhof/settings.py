@@ -170,5 +170,5 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
 SHARE_PRICE = "250"
 
 INFO_EMAIL = "hallo@glueck-hof.ch"
-SERVER_URL = "www.glueckhof.org"
-STYLES = {'static': ['/static/demo/css/customize.css']}
+SERVER_URL = "www.glueck-hof.ch"
+#STYLES = {'static': ['/static/demo/css/customize.css']}
