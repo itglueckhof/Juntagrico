@@ -163,9 +163,9 @@ ORGANISATION_ADDRESS = {"name":"Glück-Hof",
             "city" : "Baden",
             "extra" : ""}
 ORGANISATION_BANK_CONNECTION = {"PC" : "-",
-            "IBAN" : "-",
-            "BIC" : "-",
-            "NAME" : "-",
+            "IBAN" : "CH3000769010951601158",
+            "BIC" : "FRGGCHB1XXX",
+            "NAME" : "Freie Gemeinschaftsbank Genossenschaft",
             "ESR" : ""}
 SHARE_PRICE = "250"
 
