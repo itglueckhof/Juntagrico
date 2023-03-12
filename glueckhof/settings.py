@@ -171,4 +171,4 @@ SHARE_PRICE = "250"
 
 INFO_EMAIL = "hallo@glueck-hof.ch"
 SERVER_URL = "www.glueck-hof.ch"
-#STYLES = {'static': ['/static/demo/css/customize.css']}
+STYLES = {'static': ['/static/glueckhof/css/customize.css']}
