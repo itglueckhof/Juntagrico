@@ -196,5 +196,5 @@ IMAGES = {'status_100': '/static/glueckhof/img/Kleeblatt_100.png',
     'single_full': '/static/glueckhof/img/Kleeblatt_full.png',
     'single_empty': '/static/glueckhof/img/Kleeblatt_empty.png',
     'single_core': '/static/glueckhof/img/Kleeblatt_core.png',
-    'core': '/static/glueckhof/img/Kleeblatt_core.png'}
+    'core': '/static/glueckhof/img/Kleeblatt_core.png',}
 
