@@ -187,3 +187,13 @@ VOCABULARY = {
 # Abrechnung der Einsätze nach Stunden.
 ASSIGNMENT_UNIT = "HOURS"
 
+# Anpassung der Böhnli Bilder:
+IMAGES = {'status_100': '/static/glueckhof/img/Kleeblatt_100.png',
+    'status_75': '/static/glueckhof/img/Kleeblatt_75.png',
+    'status_50': '/static/glueckhof/img/Kleeblatt_50.png',
+    'status_25': '/static/glueckhof/img/Kleeblatt_25.png',
+    'status_0': '/static/glueckhof/img/Kleeblatt_0.png',
+    'single_full': '/static/glueckhof/img/Kleeblatt_full.png',
+    'single_empty': '/static/glueckhof/img/Kleeblatt_empty.png',
+    'single_core': '/static/glueckhof/img/Kleeblatt_core.png',
+    'core': '/static/glueckhof/img/Kleeblatt_core.png'}.
