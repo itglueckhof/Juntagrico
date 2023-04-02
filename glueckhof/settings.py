@@ -172,3 +172,18 @@ SHARE_PRICE = "250"
 INFO_EMAIL = "solawi@glueck-hof.ch"
 SERVER_URL = "www.glueck-hof.ch"
 STYLES = {'static': ['glueckhof/css/customize.css']}
+
+# Anpassung Geschäftsjahr = Startdatum
+BUSINESS_YEAR_START = {"day":1, "month":5}
+
+# Anpassung der Begriffe.
+VOCABULARY = {
+    'subscription' : 'Ernte-Anteil',
+    'subscription_pl' : 'Ernte-Anteile',
+    'co_member' : 'Mitabonnent',
+    'co_member_pl' : 'Mitabonnenten',
+}
+
+# Abrechnung der Einsätze nach Stunden.
+ASSIGNMENT_UNIT = "HOURS"
+
