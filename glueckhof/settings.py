@@ -198,3 +198,28 @@ IMAGES = {'status_100': '/static/glueckhof/img/Kleeblatt_100.png',
     'single_core': '/static/glueckhof/img/Kleeblatt_core.png',
     'core': '/static/glueckhof/img/Kleeblatt_core.png',}
 
+# Templates aktivieren
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # location of your overriding templates
+        'OPTIONS': {
+            # ...
+            'loaders': [
+                'django.template.loaders.filesystem.Loader',  # use filesystem loader first
+                'django.template.loaders.app_directories.Loader'
+            ],
+        },
+    },
+]
+
+# Anpassung der Emails
+EMAILS = {
+    'welcome': 'mails/member/welcome_mail.txt',
+    'co_welcome': 'mails/member/welcome_added_mail.txt',
+    's_created': 'mails/share_created_mail.txt',
+}
+
+# Statuten / Betriebsreglement
+BYLAWS = "https://drive.google.com/file/d/1XotlJ92YfoiXHtUlsvJXFzA4tgShKTD-/view?usp=sharing"
+
