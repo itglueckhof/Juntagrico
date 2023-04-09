@@ -10,10 +10,12 @@
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "share" as v_share %}
 {% vocabulary "share_pl" as v_share_pl %}
-{% trans Wir freuen uns, dich beim Glück-Hof zu begrüssen. Du bist nun in unserer Verwaltungssoftware Juntagrico als Genossenschafter:in erfasst. Vielen herzlichen Dank für dein Mitwirken.
-Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.
+{% blocktrans %} Wir freuen uns, dich beim Glück-Hof zu begrüssen. Du bist nun in unserer Verwaltungssoftware Juntagrico als Genossenschafter:in erfasst. Vielen herzlichen Dank für dein Mitwirken.
+Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
+{% blocktrans %}
 Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
 Solidarische Landwirtschaft
-Betriebsgruppe endtrans%}
+Betriebsgruppe
+{% endblocktrans %}
 {% endblock %}
