@@ -32,7 +32,10 @@
 
 {% blocktrans %}Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 
-{% blocktrans trimmed %}
-Bis bald und liebe Grüsse die Glück-Hof Solawi Betriebsgruppe
+{% blocktrans%}
+Bis bald und liebe Grüsse
+Genossenschaft Glück-Hof
+Solidarische Landwirtschaft
+Betriebsgruppe
 {% endblocktrans %}
 {% endblock %}
