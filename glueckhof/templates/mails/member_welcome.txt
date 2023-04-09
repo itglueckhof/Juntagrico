@@ -22,8 +22,7 @@ Es ist wichtig, dass alle Genossenschafter:innen erfasst sind, damit ihre Helfer
 
 Fragen? Schreibe eine Mail an {{ c_info_email }} und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 
-{% blocktrans%}
-Bis bald und liebe Grüsse
+{% blocktrans%}Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
 Solidarische Landwirtschaft
 Betriebsgruppe
