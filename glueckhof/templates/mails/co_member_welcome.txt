@@ -15,13 +15,11 @@
 {% vocabulary "member_type" as v_member_type %}
 {% vocabulary "subscription" as v_subscription %}
 {% blocktrans %}Wir freuen uns, dich in der SOLAWI Glück-Hof zu begrüssen. Vielen herzlichen Dank, dass du mit uns dieses Projekt startest und aktiv mithilfst.{% endblocktrans %}
-
 {% if c_enable_shares %}
 {% blocktrans with pm=sub.primary_member shares=co_member.usable_shares_count %}Soeben hat dich '{{pm}}' als Mitabonnent:in in unserer Verwaltungssoftware Juntagrico hinzugefügt, damit auch deine Arbeitseinsätze geplant und eingerechnet werden können.{% endblocktrans %}
 {% else %}
 {% blocktrans with pm=sub.primary_member %}Soeben hat dich '{{pm}}' als Mitabonnent:in in unserer Verwaltungssoftware Juntagrico hinzugefügt, damit auch deine Arbeitseinsätze geplant und eingerechnet werden können.{% endblocktrans %}
 {% endif %}
-
 {% blocktrans %}Um dich auf {{serverurl}} einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}:
 {% trans "Email" %}: {{ co_member.email }}
 {% trans "Passwort" %}: {{ password }}
@@ -32,8 +30,7 @@
 
 {% blocktrans %}Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 
-{% blocktrans%}
-Bis bald und liebe Grüsse
+{% blocktrans%}Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
 Solidarische Landwirtschaft
 Betriebsgruppe
