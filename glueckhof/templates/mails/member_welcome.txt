@@ -22,11 +22,10 @@
 {% blocktrans %}Ab dann kannst du dich mit E-Mail und Passwort im Anmeldefenster einloggen. Unter Menü kannst du deine Arbeitseinsätze erfassen. Die möglichen Depots werden ca. ab Mitte April 2023 wählbar sein. Wir sind fleissig am Organisieren der Depotstandorte und werden dich so bald als möglich darüber informieren. Es ist wichtig, dass alle Genossenschafter:innen erfasst sind, damit ihre Helfereinsätze auch eingerechnet werden. Wir bitten dich deshalb, alle Familienmitglieder, für die du einen Anteilsschein gekauft hast, in deinem Account hinzuzufügen. Dies machst du in deinem Menü unter “Ernte-Anteile - weitere Mitabonnenten eintragen”. Sie werden dann automatisch eine E-Mail mit Login und Passwort von uns erhalten. Fragen? Schreibe eine Mail an {{ c_info_email }} und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 {% endif %}
 
-{% blocktrans trimmed %}
+{% blocktrans%}
 Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
 Solidarische Landwirtschaft
 Betriebsgruppe
-
 {% endblocktrans %}
 {% endblock %}
