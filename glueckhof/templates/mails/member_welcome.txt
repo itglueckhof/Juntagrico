@@ -8,21 +8,25 @@
 {% config "organisation_name" as c_organisation_name %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
-{% blocktrans %}Wir freuen uns, dich bei Test test {{ v_d_enriched_organisation }} zu begrüssen.{% endblocktrans %}
+{% blocktrans %}Wir freuen uns, dich in der SOLAWI {{ v_d_enriched_organisation }} zu begrüssen. Vielen herzlichen Dank, dass du mit uns dieses Projekt startest, sei es finanziell und/oder durch dein aktives Mithelfen.{% endblocktrans %}
 
-{% blocktrans %}Um dich auf {{serverurl}} einloggen zu können benutze folgende Daten{% endblocktrans %}:
+{% blocktrans %}Um unseren Administrationsaufwand so gering wie möglich zu halten, setzen wir die Verwaltungssoftware Juntagrico ein. Eine Software, die speziell für Projekte der solidarischen Landwirtschaft entwickelt wurde. Ab sofort ist diese auch beim Glück-Hof aktiv und du bist dabei. Wir haben dich auf {{serverurl}} mit deiner E-Mailadresse bereits registriert. Um dich einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}:
 {% trans "Email" %}: {{ member.email }}
 {% trans "Passwort" %}: {{ password }}
-{% blocktrans %}Nutze den Bestätigungslink um deine E-Mail-Adresse zu bestätigen.{% endblocktrans %}
+{% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mail-Adresse zu bestätigen.{% endblocktrans %}
 {% trans "Bestätigungslink" %}: {{ serverurl }}{% url 'confirm' member.get_hash %}
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
 {% else %}
-{% blocktrans %}Für weitere Fragen schreibe eine Mail an {{ c_info_email }}.{% endblocktrans %}
+{% blocktrans %}Ab dann kannst du dich mit E-Mail und Passwort im Anmeldefenster einloggen. Unter Menü kannst du deine Arbeitseinsätze erfassen. Die möglichen Depots werden ca. ab Mitte April 2023 wählbar sein. Wir sind fleissig am Organisieren der Depotstandorte und werden dich so bald als möglich darüber informieren. Es ist wichtig, dass alle Genossenschafter:innen erfasst sind, damit ihre Helfereinsätze auch eingerechnet werden. Wir bitten dich deshalb, alle Familienmitglieder, für die du einen Anteilsschein gekauft hast, in deinem Account hinzuzufügen. Dies machst du in deinem Menü unter “Ernte-Anteile - weitere Mitabonnenten eintragen”. Sie werden dann automatisch eine E-Mail mit Login und Passwort von uns erhalten. Fragen? Schreibe eine Mail an {{ c_info_email }} und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 {% endif %}
 
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse die {{ c_organisation_name }}-Betriebsgruppe
+Bis bald und liebe Grüsse
+Genossenschaft Glück-Hof
+Solidarische Landwirtschaft
+Betriebsgruppe
+
 {% endblocktrans %}
 {% endblock %}
