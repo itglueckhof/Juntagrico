@@ -15,5 +15,5 @@ Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. W
 Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
 Solidarische Landwirtschaft
-Betriebsgruppe %}
+Betriebsgruppe endtrans%}
 {% endblock %}
