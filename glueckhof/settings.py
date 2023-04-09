@@ -201,8 +201,8 @@ IMAGES = {'status_100': '/static/glueckhof/img/Kleeblatt_100.png',
 
 # Anpassung der Emails
 EMAILS = {
-    'welcome': 'mails/member/member_welcome.txt',
-    'co_welcome': 'mails/member/co_member_welcome.txt',
+    'welcome': 'mails/member_welcome.txt',
+    'co_welcome': 'mails/co_member_welcome.txt',
     's_created': 'mails/share_created.txt',
 }
 
