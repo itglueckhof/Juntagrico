@@ -4,5 +4,3 @@
 {% block content %}{% endblock %}
 {% endautoescape %}
 {% endspaceless %}
-============
-weitere Infos: http://{% config "server_url" %}
