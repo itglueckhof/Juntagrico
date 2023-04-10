@@ -1,7 +1,4 @@
-{% spaceless %}
-{% autoescape off %}
-{% endautoescape %}
-{% endspaceless %}
+{% extends "mails/email.txt" %}
 {% load i18n %}
 {% load juntagrico.config %}
 {% block content %}
