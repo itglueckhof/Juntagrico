@@ -20,7 +20,7 @@
 {% else %}
 {% blocktrans with pm=sub.primary_member %}Soeben hat dich '{{pm}}' als Mitabonnent:in in unserer Verwaltungssoftware Juntagrico hinzugefügt, damit auch deine Arbeitseinsätze geplant und eingerechnet werden können.{% endblocktrans %}
 {% endif %}
-{% blocktrans %}Um dich auf {{serverurl}} einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}:
+{% blocktrans %}Um dich auf {{serverurl}} einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}
 {% trans "Email" %}: {{ co_member.email }}
 {% trans "Passwort" %}: {{ password }}
 {% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mail-Adresse zu bestätigen.{% endblocktrans %}
