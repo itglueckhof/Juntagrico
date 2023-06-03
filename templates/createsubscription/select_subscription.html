@@ -1,0 +1,31 @@
+{% extends "createsubscription/select_subscription.html" %}
+{% load i18n %}
+{% load static %}
+{% load juntagrico.config %}
+{% load crispy_forms_tags %}
+{% block allcontent %}
+    <div class="offset-md-2 col-md-8">
+        <h4>Wähle deine Mitarbeit pro Jahr</h4>
+        <p>Pro Halbtag (4 Stunden) weniger Mitarbeit steigt der Beitrag um CHF 50.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="number" name="work" value="40" min="8" max="40" step="4" required="" id="work" onchange="
+                    for (let element of document.getElementsByClassName('subs-type-row')){
+                       element.style.display='none';
+                       $(element.querySelector('input')).val(0).change();
+                    }
+                    for (let element of document.getElementsByClassName('type-req-' + this.value)){
+                       element.style.display='';
+                    }
+                ">
+            </div>
+            <div class="col-md-9">
+                <p>Stunden Mitarbeit pro Jahr.</p>
+            </div>
+        </div>
+    </div>
+    <div class="offset-md-2 col-md-8">
+        <h4>Wähle die Grösse deines Ernte-Anteils</h4>
+        {% crispy form %}
+    </div>
+{% endblock %}
