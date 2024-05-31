@@ -178,6 +178,9 @@ STYLES = {'static': ['glueckhof/css/customize.css']}
 # Anpassung Geschäftsjahr = Startdatum
 BUSINESS_YEAR_START = {"day":1, "month":5}
 
+# Depoliste Generierung
+DEPOT_LIST_GENERATION_DAYS = [0]
+
 # Anpassung der Begriffe.
 VOCABULARY = {
     'subscription' : 'Ernte-Anteil',
