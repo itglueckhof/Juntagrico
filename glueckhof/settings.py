@@ -16,6 +16,10 @@ DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
 ALLOWED_HOSTS = ['glueckhof.juntagrico.science', 'localhost', 'mein.glueck-hof.ch']
 
+ADMINS = (
+    ('Admin', os.environ.get('JUNTAGRICO_ADMIN_EMAIL')),
+)
+MANAGERS = ADMINS
 
 # Application definition
 
