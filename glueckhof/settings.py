@@ -28,12 +28,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'juntagrico',
+    'fontawesomefree',
+    'import_export',
     'impersonate',
     'crispy_forms',
     'adminsortable2',
-    'glueckhof',
     'polymorphic',
 ]
+
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
 
 ROOT_URLCONF = 'glueckhof.urls'
 
@@ -132,13 +135,20 @@ if DEBUG is True:
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
+    },
+}
 
 IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+LOGIN_REDIRECT_URL = "/"
 
 """
     File & Storage Settings
@@ -172,7 +182,10 @@ SHARE_PRICE = "250"
 
 DEFAULT_FROM_EMAIL = "solawi@glueck-hof.ch"
 INFO_EMAIL = "solawi@glueck-hof.ch"
-SERVER_URL = "www.glueck-hof.ch"
+ORGANISATION_WEBSITE = {
+    'name': "www.glueck-hof.ch",
+    'url': "https://www.glueck-hof.ch"
+}
 STYLES = {'static': ['glueckhof/css/customize.css']}
 
 # Anpassung Geschäftsjahr = Startdatum
