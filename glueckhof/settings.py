@@ -181,7 +181,9 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
 SHARE_PRICE = "250"
 
 DEFAULT_FROM_EMAIL = "solawi@glueck-hof.ch"
-INFO_EMAIL = "solawi@glueck-hof.ch"
+CONTACTS = {
+    "general": "solawi@glueck-hof.ch"
+}
 ORGANISATION_WEBSITE = {
     'name': "www.glueck-hof.ch",
     'url': "https://www.glueck-hof.ch"
