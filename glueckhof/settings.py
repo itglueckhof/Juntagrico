@@ -186,6 +186,8 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "ESR" : ""}
 SHARE_PRICE = "250"
 
+REQUIRED_SHARES = 0
+
 DEFAULT_FROM_EMAIL = "solawi@glueck-hof.ch"
 CONTACTS = {
     "general": "solawi@glueck-hof.ch"
