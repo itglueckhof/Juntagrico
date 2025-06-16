@@ -8,19 +8,17 @@
 {% config "organisation_name" as c_organisation_name %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
-{% blocktrans %}Wir freuen uns, dich in der SOLAWI {{ v_d_enriched_organisation }} zu begrüssen. Vielen herzlichen Dank, sei es finanziell und/oder durch dein aktives Mithelfen.{% endblocktrans %}
+{% blocktrans %}Wir freuen uns, dich in der SOLAWI {{ v_d_enriched_organisation }} zu begrüssen. Vielen herzlichen Dank für dein Mitwirken.{% endblocktrans %}
 
 {% blocktrans %}Um unseren Administrationsaufwand so gering wie möglich zu halten, setzen wir die Verwaltungssoftware Juntagrico ein. Eine Software, die speziell für Projekte der solidarischen Landwirtschaft entwickelt wurde. Wir haben dich auf {{serverurl}} mit deiner E-Mailadresse bereits registriert. Um dich einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}
 {% trans "Email" %}: {{ member.email }}
 {% trans "Passwort" %}: {{ password }}
-{% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mail-Adresse zu bestätigen.{% endblocktrans %}
+{% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mailadresse zu bestätigen.{% endblocktrans %}
 {% trans "Bestätigungslink" %}: {{ serverurl }}{% url 'confirm' member.get_hash %}
 
 {% blocktrans %}Ab dann kannst du dich mit E-Mail und Passwort im Anmeldefenster einloggen. Unter Menü kannst du deine Arbeitseinsätze erfassen. 
 
-Es ist wichtig, dass alle Genossenschafter:innen erfasst sind, damit ihre Helfereinsätze auch eingerechnet werden. Wir bitten dich deshalb, alle Familienmitglieder, für die du einen Anteilsschein gekauft hast, in deinem Account hinzuzufügen. Dies machst du in deinem Menü unter “Ernte-Anteile - weitere Mitabonnenten eintragen”. Sie werden dann automatisch eine E-Mail mit Login und Passwort von uns erhalten.
-
-Fragen? Schreibe eine Mail an {{ c_info_email }} und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
+Fragen? Schreibe eine E-Mail an {{ c_info_email }} und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 
 {% blocktrans%}Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
