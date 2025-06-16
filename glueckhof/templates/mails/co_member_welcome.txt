@@ -14,7 +14,7 @@
 {% vocabulary "share_pl" as v_share_pl %}
 {% vocabulary "member_type" as v_member_type %}
 {% vocabulary "subscription" as v_subscription %}
-{% blocktrans %}Wir freuen uns, dich in der SOLAWI Glück-Hof zu begrüssen. Vielen herzlichen Dank, dass du mit uns dieses Projekt startest und aktiv mithilfst.{% endblocktrans %}
+{% blocktrans %}Wir freuen uns, dich in der SOLAWI Glück-Hof zu begrüssen. Vielen herzlichen Dank für dein Mitwirken.{% endblocktrans %}
 {% if c_enable_shares %}
 {% blocktrans with pm=sub.primary_member shares=co_member.usable_shares_count %}Soeben hat dich '{{pm}}' als Mitabonnent:in in unserer Verwaltungssoftware Juntagrico hinzugefügt, damit auch deine Arbeitseinsätze geplant und eingerechnet werden können.{% endblocktrans %}
 {% else %}
@@ -23,12 +23,10 @@
 {% blocktrans %}Um dich auf {{serverurl}} einzuloggen, benutze bitte folgende Daten:{% endblocktrans %}
 {% trans "Email" %}: {{ co_member.email }}
 {% trans "Passwort" %}: {{ password }}
-{% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mail-Adresse zu bestätigen.{% endblocktrans %}
+{% blocktrans %}Bitte nutze den Bestätigungslink, um deine E-Mailadresse zu bestätigen.{% endblocktrans %}
 {% trans "Bestätigungslink" %}: {{ serverurl }}{% url 'confirm' co_member.get_hash %}
 
-{% blocktrans %}Damit bestätigst du, dass du damit einverstanden bist, Genossenschafter:in der SOLAWI Glück-Hof zu sein. Solltest du irrtümlicherweise hier eingetragen worden sein, melde dies bitte an solawi@glueck-hof.ch{% endblocktrans %}
-
-{% blocktrans %}Fragen? Schreibe eine Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
+{% blocktrans %}Fragen? Schreibe eine E-Mail an solawi@glueck-hof.ch und wir melden uns bei dir. Weitere Informationen findest du auch auf unserer Webseite www.glueck-hof.ch unter SOLAWI.{% endblocktrans %}
 
 {% blocktrans%}Bis bald und liebe Grüsse
 Genossenschaft Glück-Hof
