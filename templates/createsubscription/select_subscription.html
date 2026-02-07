@@ -9,7 +9,7 @@
         <p>Pro Halbtag (4 Stunden) weniger Mitarbeit steigt der Beitrag um CHF 50.</p>
         <div class="row">
             <div class="col-md-3">
-                <input type="number" name="work" value="40" min="8" max="40" step="4" required="" id="work" onchange="
+                <input type="number" name="work" value="40" min="0" max="40" step="4" required="" id="work" onchange="
                     for (let element of document.getElementsByClassName('subs-type-row')){
                        element.style.display='none';
                        $(element.querySelector('input')).val(0).change();
