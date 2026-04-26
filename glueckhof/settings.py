@@ -4,6 +4,8 @@ Django settings for glueckhof project.
 
 import os
 
+from juntagrico import defaults
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -105,6 +107,8 @@ WSGI_APPLICATION = 'glueckhof.wsgi.application'
 
 
 LANGUAGE_CODE = 'de'
+
+DJRICHTEXTFIELD_CONFIG = defaults.richtextfield_config(LANGUAGE_CODE)
 
 SITE_ID = 1
 
